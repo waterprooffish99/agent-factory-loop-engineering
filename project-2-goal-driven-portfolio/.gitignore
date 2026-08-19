@@ -1,0 +1,6 @@
+# PDF source CV
+*.pdf
+
+# Temporary test screenshots
+site/shot.png
+_*.html

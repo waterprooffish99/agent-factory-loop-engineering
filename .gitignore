@@ -1,0 +1,25 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node / Python temp files
+__pycache__/
+*.py[cod]
+*$py.class
+*.log
+
+# Headless browser probe artifacts
+_full.html
+_m.html
+_mframe.html
+_probe.html
+_probe_frame.html
+_m14.html
+_m14_test.html
+shot.png
+site/shot.png
+
+# Local configurations
+*.local.json
+.env
+.env.*
