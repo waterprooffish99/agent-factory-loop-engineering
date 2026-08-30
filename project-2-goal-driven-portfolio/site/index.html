@@ -1,207 +1,125 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Salman Hassan - AI & Agentic Technology</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Salman Hassan — Agentic AI / Full-Stack AI Systems Developer</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="main-nav">
-    <div class="nav-inner">
-      <a href="#hero" class="nav-item"><span class="nav-step">01</span> Observe</a>
-      <a href="#about" class="nav-item"><span class="nav-step">02</span> Reason</a>
-      <a href="#projects" class="nav-item"><span class="nav-step">03</span> Act</a>
-      <a href="#skills" class="nav-item"><span class="nav-step">04</span> Tools</a>
-      <a href="#contact" class="nav-item"><span class="nav-step">05</span> Validate</a>
-    </div>
+  <nav class="topbar" aria-label="Main navigation">
+    <ol>
+      <li><a href="#hero">Objective</a></li>
+      <li><a href="#about">Context</a></li>
+      <li><a href="#projects">Phases</a></li>
+      <li><a href="#skills">Tools</a></li>
+      <li><a href="#contact">Handoff</a></li>
+    </ol>
   </nav>
 
-  <section id="hero" class="reveal">
-    <div class="section-wrapper hero-wrapper">
-      <div class="phase-badge">
-        <span class="phase-num">01</span>
-        <span class="phase-title">Observe</span>
-      </div>
+  <section id="hero" class="phase">
+    <div class="hero-content">
       <h1>Salman Hassan</h1>
-      <p class="tagline">AI &amp; Agentic Technology | Digital FTE Systems</p>
-      <p class="hero-intro">Building AI agents that perform real business work — from CRM operations to customer support — using loops that observe, reason, act, and validate until tasks are complete.</p>
-      
-      <div class="loop-rail">
-        <div class="loop-node">
-          <span class="node-num">01</span>
-          <span class="node-label">Observe</span>
-          <span class="node-detail">State &amp; Context</span>
-        </div>
-        <div class="loop-arrow">&rarr;</div>
-        <div class="loop-node">
-          <span class="node-num">02</span>
-          <span class="node-label">Reason</span>
-          <span class="node-detail">Decision Model</span>
-        </div>
-        <div class="loop-arrow">&rarr;</div>
-        <div class="loop-node">
-          <span class="node-num">03</span>
-          <span class="node-label">Act</span>
-          <span class="node-detail">Tool Execution</span>
-        </div>
-        <div class="loop-arrow">&rarr;</div>
-        <div class="loop-node">
-          <span class="node-num">04</span>
-          <span class="node-label">Validate</span>
-          <span class="node-detail">Goal Proof</span>
-        </div>
-      </div>
+      <p>I build autonomous AI systems that run loops — agents that plan, execute, verify, and iterate without a human in the loop.</p>
+      <img src="avatar.svg" alt="Salman Hassan" class="avatar">
     </div>
   </section>
 
-  <section id="about" class="reveal">
-    <div class="section-wrapper">
-      <div class="phase-badge">
-        <span class="phase-num">02</span>
-        <span class="phase-title">Reason</span>
-      </div>
-      <h2>About</h2>
-      <div class="about-grid">
-        <div class="about-card">
-          <div class="prose">
-            <p>I'm transitioning into Agentic AI Engineering, building systems where AI agents do actual business work instead of just answering questions. I combine full-stack development skills with hands-on experience running a clothing and fashion business — I know what it's like to manage customer conversations on WhatsApp at midnight, to photograph products that need to sell, to handle the operational load that small businesses carry.</p>
-            <p>That context shapes how I think about automation: agents need to solve real problems for people who don't have engineering teams. My focus is on Digital FTE systems where agents take on complete business roles, running decision loops until work is finished, not just generating a response and stopping.</p>
-          </div>
-        </div>
-      </div>
+  <section id="about" class="phase">
+    <header class="phase-header">
+      <h2>Context</h2>
+      <span class="phase-status">COMPLETE</span>
+    </header>
+    <div class="prose">
+      <p>I started with web stacks — React, Next.js, FastAPI — but the problems I kept returning to weren't about rendering pages. They were about <strong>work that repeats</strong>: the research sweep you redo every Monday, the CRM update that never happens, the spec that drifts from the code.</p>
+      <p>So I moved up a layer. Now I build <strong>agentic workflows</strong> using the OpenAI Agents SDK, Model Context Protocol, and Spec-Driven Development. The loop is the pattern: declare the objective, spin up the phases, verify each output against its contract, and only stop when the checker says 20/20. My portfolio <em>is</em> one of those loops — you're reading the render phase right now.</p>
+      <p>When I'm not wiring agents, I'm writing the spec that the next agent will follow.</p>
     </div>
   </section>
 
-  <section id="projects" class="reveal">
-    <div class="section-wrapper">
-      <div class="phase-badge">
-        <span class="phase-num">03</span>
-        <span class="phase-title">Act</span>
-      </div>
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <article class="project-card">
-          <div class="project-meta">
-            <span class="project-id">EXECUTION // 01</span>
-          </div>
-          <h3>CRM Digital FTE Factory</h3>
-          <div class="prose">
-            <p>A multi-agent system where different AI agents perform distinct business roles — CRM operations, ticket handling, customer support, knowledge base lookup. Built with OpenAI Agents SDK and MCP integration, the system orchestrates multiple agents with escalation rules so work flows between them like it would between human team members. Backend runs on FastAPI and SQLModel. This was a learning project built during Agent Factory training, not a commercial deployment, but it demonstrates how agent orchestration works when you need more than one AI doing more than one job.</p>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-meta">
-            <span class="project-id">EXECUTION // 02</span>
-          </div>
-          <h3>Hackathon II: The Evolution of Task App</h3>
-          <div class="prose">
-            <p>A task app that started basic and evolved into a cloud-native system with AI chat functionality. Built with Next.js 16, App Router, FastAPI backend, and Neon Serverless PostgreSQL with SQLModel ORM. The project was about taking something familiar and pushing it toward what AI-native architecture looks like — not bolting a chatbot onto the side, but rethinking what the app could do when an agent has access to your task data and can reason about it.</p>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-meta">
-            <span class="project-id">EXECUTION // 03</span>
-          </div>
-          <h3>Loop Engineering Practice</h3>
-          <div class="prose">
-            <p>Built and tested agent workflows where an AI agent receives a task, evaluates what's needed, makes decisions, uses tools including Email MCP, and runs the loop — observe, reason, act, validate — until the task is complete. This project was practice in making agents that don't stop after one response. It's the pattern that makes Digital FTE systems possible: an agent checks if the work is done, and if not, it goes again.</p>
-          </div>
-        </article>
-      </div>
+  <section id="projects" class="phase">
+    <header class="phase-header">
+      <h2>Phases</h2>
+      <span class="phase-status">5 COMPLETED</span>
+    </header>
+    <div class="cards">
+      <article class="card">
+        <h3>Aura Agentic Engine</h3>
+        <p><strong>What it does:</strong> An agentic engine that decomposes a high-level objective into a phased plan, executes each phase with specialised sub-agents, and verifies outputs against declared contracts before passing context forward.</p>
+        <p><strong>My role:</strong> Designed the phase contract schema, built the planner that turns objectives into ordered phases, and implemented the verifier that checks each phase's output before the loop continues.</p>
+        <img src="aura.svg" alt="Aura Agentic Engine architecture diagram">
+      </article>
+      <article class="card">
+        <h3>Paper Watch AI</h3>
+        <p><strong>What it does:</strong> Monitors research sources (arXiv, conference proceedings, GitHub) for papers matching a declared interest profile, extracts the contribution claim and method, and surfaces only the ones that advance the user's stated question — not just keyword matches.</p>
+        <p><strong>My role:</strong> Built the retrieval pipeline with semantic filtering, designed the interest-profile schema, and wrote the summariser that outputs a one-paragraph "why this matters" for each hit.</p>
+        <img src="paperwatch.svg" alt="Paper Watch AI research monitoring interface">
+      </article>
+      <article class="card">
+        <h3>Sentinel RAG Hub</h3>
+        <p><strong>What it does:</strong> A retrieval-augmented generation system that connects LLM responses to live external knowledge — API docs, internal wikis, codebases — so answers cite sources and stay grounded when the underlying data changes.</p>
+        <p><strong>My role:</strong> Architected the retrieval router (vector + keyword + graph), implemented the citation enforcer that rejects uncited claims, and built the refresh loop that re-indexes on schedule or on webhook.</p>
+        <img src="sentinel.svg" alt="Sentinel RAG Hub retrieval architecture">
+      </article>
+      <article class="card">
+        <h3>Forge Automation Suite</h3>
+        <p><strong>What it does:</strong> A collection of agent workflows that automate repetitive knowledge work: PR description generation from diffs, spec-to-test scaffolding, dependency update impact analysis, and release note synthesis from commit history.</p>
+        <p><strong>My role:</strong> Defined the workflow DSL, built the GitHub Actions integration layer, and wrote the prompt templates that make each workflow produce review-ready output on first run.</p>
+        <img src="forge.svg" alt="Forge Automation Suite workflow dashboard">
+      </article>
+      <article class="card">
+        <h3>Digital FTE / CRM Agent</h3>
+        <p><strong>What it does:</strong> An AI agent that operates a CRM like a human FTE would — it reads inbound emails, extracts action items, updates deal stages, drafts follow-ups, and flags stalled opportunities, all driven by a Spec-Driven Development contract that defines what "done" looks like for each task.</p>
+        <p><strong>My role:</strong> Authored the spec (objectives → phases → verifiers), built the email→action extractor using function calling, and implemented the CRM write-back with idempotency guards.</p>
+        <img src="digitalfte.svg" alt="Digital FTE CRM Agent interface">
+      </article>
     </div>
   </section>
 
-  <section id="skills" class="reveal">
-    <div class="section-wrapper">
-      <div class="phase-badge">
-        <span class="phase-num">04</span>
-        <span class="phase-title">Tools</span>
-      </div>
-      <h2>Skills</h2>
-      <div class="skills-container">
-        <div class="skills-card">
-          <div class="skill-category">
-            <span class="category-title">Languages &amp; Frameworks</span>
-          </div>
-          <ul class="skills-list">
-            <li class="skill-item">Python</li>
-            <li class="skill-item">TypeScript</li>
-            <li class="skill-item">Next.js</li>
-            <li class="skill-item">React</li>
-            <li class="skill-item">FastAPI</li>
-          </ul>
-        </div>
-
-        <div class="skills-card">
-          <div class="skill-category">
-            <span class="category-title">AI &amp; Agent Systems</span>
-          </div>
-          <ul class="skills-list">
-            <li class="skill-item">OpenAI Agents SDK</li>
-            <li class="skill-item">Multi-Agent Systems</li>
-            <li class="skill-item">MCP (Model Context Protocol)</li>
-            <li class="skill-item">Loop Engineering</li>
-            <li class="skill-item">AI-Native Development</li>
-            <li class="skill-item">Prompt Engineering</li>
-          </ul>
-        </div>
-
-        <div class="skills-card">
-          <div class="skill-category">
-            <span class="category-title">Data &amp; Infrastructure</span>
-          </div>
-          <ul class="skills-list">
-            <li class="skill-item">SQLModel</li>
-            <li class="skill-item">Docker</li>
-            <li class="skill-item">Neon Serverless PostgreSQL</li>
-          </ul>
-        </div>
-
-        <div class="skills-card">
-          <div class="skill-category">
-            <span class="category-title">Development Practice</span>
-          </div>
-          <ul class="skills-list">
-            <li class="skill-item">Spec-Driven Development</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+  <section id="skills" class="phase">
+    <header class="phase-header">
+      <h2>Tools</h2>
+      <span class="phase-status">19 LOADED</span>
+    </header>
+    <ul class="skill-list">
+      <li>Python</li>
+      <li>TypeScript</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Next.js</li>
+      <li>Tailwind CSS</li>
+      <li>FastAPI</li>
+      <li>Node.js</li>
+      <li>OpenAI Agents SDK</li>
+      <li>MCP (Model Context Protocol)</li>
+      <li>Docker</li>
+      <li>Prompt Engineering</li>
+      <li>Context Engineering</li>
+      <li>Spec-Driven Development</li>
+      <li>Loop Engineering</li>
+      <li>RAG (Retrieval-Augmented Generation)</li>
+      <li>AI Agents</li>
+      <li>Git</li>
+      <li>GitHub</li>
+    </ul>
   </section>
 
-  <section id="contact" class="reveal">
-    <div class="section-wrapper">
-      <div class="phase-badge">
-        <span class="phase-num">05</span>
-        <span class="phase-title">Validate</span>
-      </div>
-      <h2>Contact</h2>
-      <div class="contact-box">
-        <div class="prose">
-          <p>If you're building systems where AI agents do real work — or you're figuring out what that even means for your business — let's talk.</p>
-        </div>
-        <div class="contact-links">
-          <a href="mailto:salmanhasssan1986@gmail.com" class="contact-btn">
-            <span class="btn-meta">EMAIL</span>
-            <span class="btn-text">salmanhasssan1986@gmail.com</span>
-          </a>
-          <a href="https://github.com/waterprooffish99" class="contact-btn">
-            <span class="btn-meta">GITHUB</span>
-            <span class="btn-text">github.com/waterprooffish99</span>
-          </a>
-          <a href="https://www.linkedin.com/in/salman-hassan-14b486285/" class="contact-btn">
-            <span class="btn-meta">LINKEDIN</span>
-            <span class="btn-text">linkedin.com/in/salman-hassan-14b486285</span>
-          </a>
-        </div>
-      </div>
+  <section id="contact" class="phase">
+    <header class="phase-header">
+      <h2>Handoff</h2>
+      <span class="phase-status">OPEN</span>
+    </header>
+    <div class="prose">
+      <p>Open to agentic AI roles, loop engineering contracts, and spec-driven collaborations.</p>
+      <ul class="contact-links">
+        <li><a href="https://github.com/waterprooffish99">github.com/waterprooffish99</a></li>
+        <li><a href="https://my-portfolio-sigma-topaz-45.vercel.app">my-portfolio-sigma-topaz-45.vercel.app</a></li>
+      </ul>
     </div>
   </section>
 
   <script>
+    // IntersectionObserver for scroll reveals
     var ro = new IntersectionObserver(function (es) {
       es.forEach(function (e) {
         if (e.isIntersecting) {
@@ -211,6 +129,20 @@
       });
     }, { rootMargin: '0px 0px -10% 0px' });
     [].slice.call(document.querySelectorAll('.reveal')).forEach(function (n) { ro.observe(n); });
+
+    // Nav highlight on scroll
+    var sections = ['hero','about','projects','skills','contact'];
+    var navLinks = document.querySelectorAll('.topbar a');
+    window.addEventListener('scroll', function () {
+      var pos = window.scrollY + window.innerHeight / 3;
+      sections.forEach(function (id, i) {
+        var sec = document.getElementById(id);
+        if (sec && pos >= sec.offsetTop && pos < sec.offsetTop + sec.offsetHeight) {
+          navLinks.forEach(function (l) { l.classList.remove('active'); });
+          navLinks[i].classList.add('active');
+        }
+      });
+    });
   </script>
 </body>
 </html>
