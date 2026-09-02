@@ -1,0 +1,11 @@
+# progress.md is the spine — it is generated on the first run, not committed as a
+# starter. Deleting it is the "no spine, no loop" lesson, so it must be able to
+# come back on its own.
+progress.md
+
+# Generated briefs and Python caches.
+briefs/
+__pycache__/
+
+# The archived previous (AGY) attempt — kept locally, not part of the project.
+_prev_agy_attempt/

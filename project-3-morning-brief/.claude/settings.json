@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(morning-brief)",
+      "Bash(python3 .claude/skills/morning-brief/scripts/brief.py *)"
+    ]
+  }
+}
