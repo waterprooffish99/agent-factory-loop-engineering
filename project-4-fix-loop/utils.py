@@ -12,7 +12,7 @@ def rolling_average(values, window=3):
     if window > len(values):
         window = len(values)
     result = []
-    for i in range(len(values) - window):
+    for i in range(len(values) - window + 1):
         chunk = values[i : i + window]
         result.append(sum(chunk) / len(chunk))
     return result
@@ -36,9 +36,6 @@ def clamp(value, low, high):
 
 def flatten(nested):
     """Flatten a list of lists into a single list."""
-
-    if window > len(values):
-        window = len(values)
     result = []
     for sublist in nested:
         result.extend(sublist)
@@ -47,9 +44,6 @@ def flatten(nested):
 
 def interleave(a, b):
     """Interleave two lists. If they differ in length, append the remainder of the longer one."""
-
-    if window > len(values):
-        window = len(values)
     result = []
     for i in range(max(len(a), len(b))):
         if i < len(a):
