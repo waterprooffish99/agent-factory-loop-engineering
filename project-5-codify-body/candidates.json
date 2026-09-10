@@ -1,0 +1,34 @@
+[
+  {
+    "id": 0,
+    "purpose": "Correct fix for rolling_average's missing final window",
+    "file": "utils.py",
+    "bug": "rolling_average omits the final valid window because its loop has an off-by-one error",
+    "check": "rolling_average",
+    "implementation": "Fix the root cause with the minimum necessary change."
+  },
+  {
+    "id": 1,
+    "purpose": "Correct order-preserving fix for find_duplicates",
+    "file": "utils.py",
+    "bug": "find_duplicates loses the first-occurrence order of duplicate items",
+    "check": "find_duplicates",
+    "implementation": "Fix the root cause with the minimum necessary change."
+  },
+  {
+    "id": 2,
+    "purpose": "Correct semantic fix for clamp's swapped min/max logic",
+    "file": "utils.py",
+    "bug": "clamp currently uses min(low, max(value, high)), which does not clamp values into [low, high]",
+    "check": "clamp",
+    "implementation": "Fix the root cause with the minimum necessary change. Mathematically equivalent correct forms are acceptable."
+  },
+  {
+    "id": 3,
+    "purpose": "Deliberately insufficient rolling_average fix that the checker must reject",
+    "file": "utils.py",
+    "bug": "rolling_average omits the final valid window because its loop has an off-by-one error",
+    "check": "rolling_average",
+    "implementation": "SABOTAGE PROOF: apply exactly this intentionally insufficient candidate change: insert `window = min(window, len(values))` immediately before `result = []`. Do not alter the buggy range expression. This candidate is intentionally bad and must be left for the reviewer to reject."
+  }
+]
