@@ -1,0 +1,10 @@
+  beat 8: scanned 5, 3 known, 2 new, 0 escalated -> SUCCESS
+  brief:  briefs/2026-09-11-beat-8.md
+  spine:  progress.md updated (read first, written last)
+  beat 9: operational failure
+  timestamp: 2026-09-11T08:52:02Z
+  failed operation: read required input inputs/daily-source.md
+  error reason: FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/Projects/agent-factory-loop-engineering/project-7-break-it-on-purpose/inputs/daily-source.md'
+  status: NEEDS_HUMAN
+  suggested human action: Create or restore inputs/daily-source.md, then review it before retrying.
+  spine: progress.md updated with failure evidence

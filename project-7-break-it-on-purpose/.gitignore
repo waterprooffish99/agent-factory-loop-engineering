@@ -1,0 +1,19 @@
+# Project 7 keeps its final progress.md as the observability proof.
+
+# Keep the normal scheduled Project 7 beat, not the copied Project 3 briefs.
+briefs/*
+!briefs/2026-09-11-beat-8.md
+
+# Keep the Project 7 cron evidence despite the repository-wide *.log rule.
+!cron.log
+
+# Copied Project 3 runtime evidence is not part of the Project 7 proof.
+cron-test.log
+
+# Runtime-only state. Committing the consumed guard would prevent a fresh clone
+# from running its own controlled failure attempt.
+.project7-failure-attempted
+
+# Generated caches and the archived prior attempt.
+__pycache__/
+_prev_agy_attempt/
