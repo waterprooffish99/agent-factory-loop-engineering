@@ -1,0 +1,5 @@
+# EXAMPLE ONLY — REVIEW AND INSTALL MANUALLY AFTER THE HUMAN ACTIVATION GATE
+SHELL=/bin/bash
+PATH=/usr/local/bin:/usr/bin:/bin
+CRON_TZ=Asia/Karachi
+17 7 * * * cd /mnt/d/Projects/agent-factory-loop-engineering && /usr/bin/python3 project-8-daily-changelog/scripts/run_beat.py >> project-8-daily-changelog/logs/cron.log 2>&1
