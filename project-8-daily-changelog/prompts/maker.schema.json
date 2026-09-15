@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["decision", "summary", "commits_considered"],
+  "properties": {
+    "decision": {"type": "string", "enum": ["UPDATED", "NO_WORK"]},
+    "summary": {"type": "string"},
+    "commits_considered": {
+      "type": "array",
+      "items": {"type": "string"}
+    }
+  }
+}

@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+
+# Live operational state. These files persist locally across beats, but normal
+# loop activity must not leave the repository worktree dirty.
+/.beat.lock
+/state.json
+/state.json.tmp
+/progress.md
+/logs/
+/evidence/

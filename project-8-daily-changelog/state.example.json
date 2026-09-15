@@ -1,0 +1,10 @@
+{
+  "beats": [],
+  "initialization_note": "Copy to state.json and replace successful_checkpoint with the full commit SHA that precedes the first changelog range.",
+  "initialized_at": null,
+  "next_beat_number": 1,
+  "pending_review": null,
+  "schema_version": 1,
+  "successful_checkpoint": "REPLACE_WITH_FULL_COMMIT_SHA",
+  "updated_at": null
+}
