@@ -2,6 +2,12 @@
 
 This document summarizes meaningful, reader-visible repository milestones.
 
+## 2026-09-15
+
+- Added Project 8's supervised daily changelog loop, which discovers newly accepted commits, drafts and independently verifies a one-file changelog update in isolation, and opens a pull request for human review while preserving checkpoints, budget limits, and a no-auto-merge gate.
+
+Commits: b412cab, 20a439b
+
 ## 2026-09-11
 
 - Reworked the Project 2 portfolio into a responsive visual agent-loop experience, with separate source-grounded content and design specifications.
